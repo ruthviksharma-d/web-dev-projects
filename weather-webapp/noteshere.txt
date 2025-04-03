@@ -1,4 +1,4 @@
 the weather api site :
 https://www.weatherapi.com/my/
 
-my api--- 577f657ba8a74bb99cc142741252303
+the api that will be given is varied from one other.
