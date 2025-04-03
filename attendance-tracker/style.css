@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* using min-height for full viewport height */
+    background: linear-gradient(135deg, #708ab4, #9c6bb3);
+    color: #e0e0e0;
+}
+
+.container {
+    width: 90%; /* using percentage for width */
+    max-width: 800px; /* limit max width */
+    padding: 20px; /* reduce padding for smaller screens */
+    background-color: rgba(12, 20, 34, 0.8);
+    border-radius: 10px; /* reduce border radius */
+    
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px; /* reduce margin */
+    font-size: 1.5em; /* Use em units for font size */
+    color: #a8dadc;
+}
+
+.date-input {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.date-input label {
+    margin-right: 5px;
+    color: #e0e0e0;
+}
+
+.attendance-section {
+    display: flex;
+    flex-direction: column; /* stack on smaller screens */
+}
+
+.attendee-list, .attendance-summary {
+    width: 100%; /* full width on smaller screens */
+    margin-bottom: 15px; /* adding margin between sections */
+}
+
+h2 {
+    color: #ffb703;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.attendee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* reduce padding */
+    border-bottom: 1px solid #4a5568;
+}
+
+.attendee:last-child {
+    border-bottom: none;
+}
+
+.attendee span {
+    flex-grow: 1;
+}
+
+.attendee input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px; /* reduce padding */
+    margin: 5px; /* reduce margin */
+    border: none;
+    border-radius: 5px; /* reduce border radius */
+    font-size: 1em; /*using em units for font size */
+    transition: background-color 0.3s;
+}
+
+#markPresent {
+    background-color: #48bb78;
+    color: white;
+}
+
+#markAbsent {
+    background-color: #e53e3e;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#attendanceSummary {
+    max-height: 200px; /* reduce max height */
+    overflow-y: auto;
+    border: 1px solid #4a5568;
+    padding: 8px; /* reduce padding */
+}
+
+/* Media Query for smaller screens */
+@media (min-width: 600px) {
+    .attendance-section {
+        flex-direction: row; /* row layout on larger screens */
+    }
+
+    .attendee-list, .attendance-summary {
+        width: 48%; /* adjust width on larger screens */
+    }
+}

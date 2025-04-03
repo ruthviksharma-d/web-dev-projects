@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance for: <span id="eventName">Event Name</span> - <span id="eventDate"></span></h1>
+        <div class="date-input">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date">
+        </div>
+        <div class="attendance-section">
+            <div class="attendee-list">
+                <h2>Attendees</h2>
+                <div id="attendeeList"></div>
+            </div>
+            <div class="attendance-summary">
+                <h2>Attendance Summary</h2>
+                <div id="attendanceSummary"></div>
+            </div>
+        </div>
+        <div class="button-group">
+            <button id="markPresent">Mark Present</button>
+            <button id="markAbsent">Mark Absent</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
