@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashlearn - Learn from Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Flashlearn</h1>
+            <p>Turn any text into flashcards to help you learn</p>
+        </header>
+
+        <main>
+            <section id="input-section">
+                <h2>Input Text</h2>
+                <textarea id="text-input" placeholder="Paste or type your text here..."></textarea>
+                <button id="generate-btn">Generate Flashcards</button>
+                <div id="loading" class="hidden">
+                    <div class="spinner"></div>
+                    <p>Generating flashcards...</p>
+                </div>
+            </section>
+
+            <section id="flashcards-section" class="hidden">
+                <h2>Your Flashcards</h2>
+                <div class="controls">
+                    <button id="save-btn">Save Deck</button>
+                    <button id="new-text-btn">New Text</button>
+                </div>
+                <div id="flashcards-container"></div>
+                <div class="navigation">
+                    <button id="prev-btn">Previous</button>
+                    <span id="card-counter">Card 0 of 0</span>
+                    <button id="next-btn">Next</button>
+                </div>
+            </section>
+
+            <section id="saved-decks-section">
+                <h2>Saved Decks</h2>
+                <div id="saved-decks-container"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Memorize &copy; 2025 - Learn Smarter</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,691 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-gradient: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    --secondary-gradient: linear-gradient(135deg, #f05053, #e1eec3);
+    --success-gradient: linear-gradient(135deg, #43cea2, #185a9d);
+    --danger-gradient: linear-gradient(135deg, #ff416c, #ff4b2b);
+    --card-1-gradient: linear-gradient(135deg, #4776e6, #8e54e9);
+    --card-2-gradient: linear-gradient(135deg, #11998e, #38ef7d);
+    --card-3-gradient: linear-gradient(135deg, #ff4e50, #f9d423);
+    --card-4-gradient: linear-gradient(135deg, #a8c0ff, #3f2b96);
+    --card-5-gradient: linear-gradient(135deg, #834d9b, #d04ed6);
+    --card-shadow: 0 10px 20px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.1);
+    --transition-standard: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f7fa url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M%200%2C50%20C%20150%2C150%20350%2C-50%20500%2C80%20L%20500%2C00%20L%200%2C0%20Z%22%20style%3D%22stroke%3A%20none%3B%20fill%3A%20rgba%2858%2C%20123%2C%20213%2C%200.06%29%3B%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: var(--primary-gradient);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--primary-gradient);
+    border-radius: 2px;
+}
+
+header p {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 1rem auto 0;
+}
+
+section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    transition: var(--transition-standard);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1), 0 5px 15px rgba(0,0,0,0.07);
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #e1e8ed;
+    padding-bottom: 0.8rem;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background: var(--primary-gradient);
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    resize: vertical;
+    transition: var(--transition-standard);
+    background-color: rgba(247, 250, 252, 0.8);
+}
+
+textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+button {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition-standard);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+button:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    20% {
+        transform: scale(25, 25);
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#save-btn {
+    background: var(--success-gradient);
+}
+
+#new-text-btn {
+    background: var(--danger-gradient);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+#prev-btn, #next-btn {
+    background: var(--secondary-gradient);
+    padding: 0.7rem 1.5rem;
+}
+
+#card-counter {
+    font-weight: bold;
+    color: #3498db;
+    background: #f8f9fa;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#flashcards-container {
+    display: flex;
+    justify-content: center;
+    perspective: 1500px;
+    min-height: 350px;
+    margin: 2rem 0;
+}
+
+.flashcard {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.flashcard.flipped {
+    transform: rotateY(180deg);
+}
+
+.flashcard-front, .flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    box-shadow: var(--card-shadow);
+    transition: all 0.4s ease;
+}
+
+.flashcard-front {
+    background: var(--card-1-gradient);
+    color: white;
+    text-align: center;
+}
+
+.flashcard:nth-of-type(5n+2) .flashcard-front {
+    background: var(--card-2-gradient);
+}
+
+.flashcard:nth-of-type(5n+3) .flashcard-front {
+    background: var(--card-3-gradient);
+}
+
+.flashcard:nth-of-type(5n+4) .flashcard-front {
+    background: var(--card-4-gradient);
+}
+
+.flashcard:nth-of-type(5n+5) .flashcard-front {
+    background: var(--card-5-gradient);
+}
+
+.flashcard-back {
+    background: #fcfeff;
+    color: #2c3e50;
+    transform: rotateY(180deg);
+    border: 2px solid #e0e6ed;
+}
+
+.flashcard-front h3, .flashcard-back h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.flashcard-front h3::after, .flashcard-back h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.flashcard-back h3::after {
+    background: rgba(52, 152, 219, 0.3);
+}
+
+.flashcard-front p, .flashcard-back p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.hint {
+    position: absolute;
+    bottom: 15px;
+    font-style: italic;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    font-weight: 300;
+}
+
+.flashcard-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+}
+
+.flashcard:hover .flashcard-front, .flashcard:hover .flashcard-back {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card-visualization {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.card-dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.card-dot.active {
+    width: 14px;
+    height: 14px;
+    background: white;
+}
+
+.saved-deck {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition-standard);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-left: 5px solid #3498db;
+}
+
+.saved-deck:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.saved-deck h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.saved-deck p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.saved-deck button {
+    margin-left: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    min-width: 80px;
+}
+
+.load-deck-btn {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.delete-deck-btn {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.hidden {
+    display: none;
+}
+
+#loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    background: conic-gradient(transparent, transparent, transparent, #3498db);
+    border-radius: 50%;
+    position: relative;
+    animation: spinner-animation 1s linear infinite;
+}
+
+.spinner::before {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+@keyframes spinner-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Progress bar for loading */
+.progress-bar {
+    width: 100%;
+    max-width: 300px;
+    height: 8px;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    margin-top: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: var(--primary-gradient);
+    border-radius: 4px;
+    width: 0%;
+    animation: progress 2s ease-in-out infinite;
+}
+
+@keyframes progress {
+    0% { width: 0%; }
+    50% { width: 70%; }
+    100% { width: 100%; }
+}
+
+#loading p {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #3498db;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    color: #7f8c8d;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+}
+
+footer p {
+    position: relative;
+    display: inline-block;
+}
+
+footer p::before, footer p::after {
+    content: '✦';
+    margin: 0 10px;
+    color: #3498db;
+}
+
+/* Progress diagram for cards */
+.progress-stats {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.progress-title {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.progress-diagram {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: relative;
+}
+
+.progress-diagram::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    background: #e0e6ed;
+    z-index: 1;
+}
+
+.progress-step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #3498db;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #3498db;
+    box-shadow: 0 0 0 5px rgba(52, 152, 219, 0.1);
+    transition: all 0.3s ease;
+}
+
+.progress-step.completed {
+    background: #3498db;
+    color: white;
+}
+
+.progress-step-label {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    width: max-content;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    .flashcard {
+        height: 300px;
+    }
+    
+    button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .progress-diagram {
+        height: 100px;
+        flex-direction: column;
+    }
+    
+    .progress-diagram::before {
+        width: 2px;
+        height: 80%;
+        left: 50%;
+        top: 10%;
+        right: auto;
+    }
+    
+    .progress-step-label {
+        top: auto;
+        left: 40px;
+        transform: none;
+    }
+}
+
+/* Animations for page elements */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section, header {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Confetti animation for completing a deck */
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f2d74e;
+    opacity: 0;
+}
+
+@keyframes confetti-fall {
+    0% { opacity: 1; top: -10%; transform: rotate(0deg); }
+    100% { opacity: 0; top: 100%; transform: rotate(720deg); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2980b9, #3498db);
+}
+
+/* Card themes - adding different colors for different subjects */
+.theme-math .flashcard-front {
+    background: linear-gradient(135deg, #FF5F6D, #FFC371);
+}
+
+.theme-science .flashcard-front {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.theme-history .flashcard-front {
+    background: linear-gradient(135deg, #834d9b, #d04ed6);
+}
+
+.theme-languages .flashcard-front {
+    background: linear-gradient(135deg, #4776E6, #8E54E9);
+}
+
+.theme-arts .flashcard-front {
+    background: linear-gradient(135deg, #FF416C, #FF4B2B);
+}
