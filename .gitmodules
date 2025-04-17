@@ -10,3 +10,6 @@
 [submodule "attendance-track"]
 	path = attendance-track
 	url = https://github.com/ruthviksharma-d/attendance-tracker.git
+[submodule "flashcards"]
+	path = flashcards
+	url = https://github.com/ruthviksharma-d/flashcards-maker.git
