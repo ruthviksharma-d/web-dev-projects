@@ -1,4 +1,0 @@
-the weather api site :
-https://www.weatherapi.com/my/
-
-the api that will be given is varied from one other.
