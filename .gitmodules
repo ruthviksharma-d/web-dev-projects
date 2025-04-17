@@ -1,3 +1,6 @@
 [submodule "paint-color-mixer"]
 	path = paint-color-mixer
 	url = https://github.com/ruthviksharma-d/paint-color-mixer.git
+[submodule "spotify-clone"]
+	path = spotify-clone
+	url = https://github.com/ruthviksharma-d/spotify-clone.git
