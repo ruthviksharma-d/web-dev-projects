@@ -7,3 +7,6 @@
 [submodule "weatherapp"]
 	path = weatherapp
 	url = https://github.com/ruthviksharma-d/weather-webapp.git
+[submodule "attendance-track"]
+	path = attendance-track
+	url = https://github.com/ruthviksharma-d/attendance-tracker.git
