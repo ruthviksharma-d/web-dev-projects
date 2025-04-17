@@ -1,0 +1,3 @@
+[submodule "paint-color-mixer"]
+	path = paint-color-mixer
+	url = https://github.com/ruthviksharma-d/paint-color-mixer.git
