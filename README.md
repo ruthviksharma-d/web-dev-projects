@@ -22,13 +22,13 @@ git submodule update --init --recursive
 
 ## 🛠 Projects Included
 
-| Project Number|    Project Name                     | Description                  |
+| S.No |    Project Name                     | Description                  |
 |--------------|------------------------------------|----------------------|
-| `1`  | paint-color-mixer   | A responsive portfolio website.         |
-| `2`  | weather-webapp    | A responsive portfolio website.       |
-| `3`  | attendance-tracker     |A responsive portfolio website.       |
-| `4` | spotify-clone | Project Name|
-| `5` | flashcards-maker | Project Name|
+| `1`  | paint-color-mixer   | 	A web app to mix and preview custom paint colors.         |
+| `2`  | weather-webapp    | 	A simple weather app displaying real-time weather data.       |
+| `3`  | attendance-tracker     |A tool to mark, track, and manage attendance records.       |
+| `4` | spotify-clone | 	A basic Spotify UI clone with music playback features.|
+| `5` | flashcards-maker |Create, edit, and study with interactive flashcards.|
 <!-- Add more rows as needed -->
 
 ---
