@@ -24,9 +24,11 @@ git submodule update --init --recursive
 
 | Project Number|    Project Name                     | Description                  |
 |--------------|------------------------------------|----------------------|
-| `paint color mixer`  | n1   | A responsive portfolio website.         |
-| `project-2`  | n2    | A responsive portfolio website.       |
-| `project-3`  | n3     |A responsive portfolio website.       |
+| `1`  | paint-color-mixer   | A responsive portfolio website.         |
+| `2`  | weather-webapp    | A responsive portfolio website.       |
+| `3`  | attendance-tracker     |A responsive portfolio website.       |
+| `4` | spotify-clone | Project Name|
+| `5` | flashcards-maker | Project Name|
 <!-- Add more rows as needed -->
 
 ---
