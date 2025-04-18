@@ -51,12 +51,6 @@ If you’d like to suggest improvements or contribute to any of the sub-projects
 
 ---
 
-## 📄 License
-
-This repository and the projects it links to may use different licenses. Please check each submodule's `LICENSE` file for details.
-
----
-
 ## 🔗 Connect with Me
 
 - **Portfolio**: [My Portfolio](https://ruthvikporto.framer.website/)
