@@ -9,7 +9,7 @@ Welcome to the central repository for all of my web development projects. This r
 Each project is included as a submodule. To clone this repository with all submodules:
 
 ```
-git clone --recurse-submodules https://github.com/your-username/your-repo-name.git
+git clone --recurse-submodules https://github.com/ruthviksharma-d/repo-name.git
 ```
 
 If you've already cloned the repo without `--recurse-submodules`, initialize and update the submodules like this:
@@ -24,7 +24,7 @@ git submodule update --init --recursive
 
 | Project Name | Description                        | Path                 |
 |--------------|------------------------------------|----------------------|
-| `project-1`  | A responsive portfolio website.    | `/project-1`         |
+| `paint color mixer`  | A responsive portfolio website.    | `/paint-color-mixer`         |
 | `project-2`  | A modern e-commerce front-end.     | `/project-2`         |
 | `project-3`  | A real-time chat application.      | `/project-3`         |
 <!-- Add more rows as needed -->
