@@ -22,11 +22,11 @@ git submodule update --init --recursive
 
 ## 🛠 Projects Included
 
-| Project Name | Description                        | Path                 |
+| Project Number|    Project Name                     | Description                  |
 |--------------|------------------------------------|----------------------|
-| `paint color mixer`  | A responsive portfolio website.    | `/paint-color-mixer`         |
-| `project-2`  | A modern e-commerce front-end.     | `/project-2`         |
-| `project-3`  | A real-time chat application.      | `/project-3`         |
+| `paint color mixer`  | n1   | A responsive portfolio website.         |
+| `project-2`  | n2    | A responsive portfolio website.       |
+| `project-3`  | n3     |A responsive portfolio website.       |
 <!-- Add more rows as needed -->
 
 ---
