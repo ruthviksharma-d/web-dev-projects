@@ -60,7 +60,7 @@ This repository and the projects it links to may use different licenses. Please 
 ## 🔗 Connect with Me
 
 - Portfolio: My Portfolio ([https://your-portfolio.com](https://ruthvikporto.framer.website/))
-- LinkedIn: https://www.linkedin.com/in/ruthvik-s-6a4a732a1/([https://linkedin.com/in/yourusername](https://www.linkedin.com/in/ruthvik-s-6a4a732a1/))
+- LinkedIn: https://www.linkedin.com/in/ruthvik-s-6a4a732a1/(https://www.linkedin.com/in/ruthvik-s-6a4a732a1/))
 
 
 ---
