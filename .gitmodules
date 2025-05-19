@@ -4,9 +4,6 @@
 [submodule "spotify-clone"]
 	path = spotify-clone
 	url = https://github.com/ruthviksharma-d/spotify-clone.git
-[submodule "weatherapp"]
-	path = weatherapp
-	url = https://github.com/ruthviksharma-d/weather-webapp.git
 [submodule "attendance-track"]
 	path = attendance-track
 	url = https://github.com/ruthviksharma-d/attendance-tracker.git
